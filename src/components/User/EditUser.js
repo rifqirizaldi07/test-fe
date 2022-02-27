@@ -15,6 +15,8 @@ const EditUser = (props) => {
       setValue("email", result.data.email);
       setValue("gender", result.data.gender);
       setValue("status", result.data.status);
+    }).catch((error) => {
+      console.log(error)
     });
   }, [id]);
 

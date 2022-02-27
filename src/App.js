@@ -11,8 +11,8 @@ import ListUser from "./components/User/ListUser";
 
 function App() {
   return (
-    <BrowserRouter>
-      <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+    <BrowserRouter>   
+      <nav className=" container-fluid navbar navbar-expand-lg navbar-dark bg-dark">
         <NavLink to="/" className="navbar-brand">
           Modul Management
         </NavLink>

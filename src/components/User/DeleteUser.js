@@ -10,6 +10,8 @@ const DeleteUser = (props) => {
   useEffect(() => {
     axios.get(`https://gorest.co.in/public/v2/users/${id}`).then((result) => {
       setUser(result.data);
+    }).catch((error) => {
+      console.log(error)
     });
   }, [id]);
 

@@ -17,6 +17,8 @@ const CreateUser = (props) => {
       .then((result) => {
         console.log("result", result.data); // in console add list
         props.history.push("/");
+      }).catch((error) => {
+        console.log(error)
       });
   };
 
