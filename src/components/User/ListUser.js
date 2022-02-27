@@ -14,6 +14,7 @@ const ListUser = () => {
     });
   }, []);
 
+  
   const Search = id => {
     const newResult = user.filter(row => row.name.includes(id));
     console.log('newResult', newResult)
