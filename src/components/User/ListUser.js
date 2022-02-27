@@ -16,7 +16,7 @@ const ListUser = () => {
 
   
   const Search = id => {
-    const newResult = user.filter(row => row.name.includes(id));
+    const newResult = user.filter(row => row.name.toLowerCase().includes(id));
     console.log('newResult', newResult)
     setSearch(newResult)
   }
